@@ -7,12 +7,12 @@
  */
 
 /**
- * Description of Admin
+ * Description of LocalDB
  *
  * @author David
  */
-class Admin {
-     private $_attributs = array();
+class LocalDB {
+    private $_attributs = array();
 
     public function __construct(array $data) {
         $this->hydrate($data);
@@ -37,5 +37,4 @@ class Admin {
     public function __set($nom, $valeur) { //$key, $value de hydrate
         $this->_attributs[$nom] = $valeur;
     }
-
 }
