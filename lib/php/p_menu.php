@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-md navbar-light">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="./admin/images/logo.png" alt="logo"/>
-        <img src="./admin/images/porteeNoireRouge.png" alt="logoPortee"/>&nbsp;    
+        <img src="./admin/images/condorcet.png" alt="logo"/>
+        <img src="./admin/images/condorcet.png" alt="logoPortee"/>&nbsp;    
         <span class="navbar-toggler-icon"></span>&nbsp;
         <a href="index.php?page=login.php" class="black font-weight-bold">
             <i class="fas fa-key"></i> <!-- ou autre icône -->
@@ -11,14 +11,14 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <a href="" class="navbar-brand collapse navbar-collapse">
-            <img src="./admin/images/full_logo2.png" alt="DigitArt" class="topLogo"/>          
+            <img src="./admin/images/reports.jpg" alt="Absences" class="topLogo"/>          
         </a>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="./index.php?page=accueil.php">Accueil<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./index.php?page=autre_page.php">Link</a>
+                <a class="nav-link" href="./index.php?page=autre_page.php">Connexion</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
