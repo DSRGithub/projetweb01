@@ -21,7 +21,7 @@ class EtudiantDB extends Etudiant{
     }
     
     public function addEtudiant(array $data) {
-        $query = "select ajouter_etudiant(:nom,:prenom,:adresse_mail,:mot_de_passe) as retour";
+        $query = "select ajouter_client(:nom,:prenom,:adresse_mail,:mot_de_passe) as retour";
 
         try {
             $resultset = $this->_db->prepare($query);
