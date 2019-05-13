@@ -1,19 +1,18 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-
 /**
- * Description of Etudiant
+ * Description of Admin
  *
  * @author David
  */
 class Etudiant {
-    private $_attributs = array();
+     private $_attributs = array();
 
     public function __construct(array $data) {
         $this->hydrate($data);
@@ -38,4 +37,7 @@ class Etudiant {
     public function __set($nom, $valeur) { //$key, $value de hydrate
         $this->_attributs[$nom] = $valeur;
     }
+
 }
+
+

@@ -43,12 +43,12 @@ class EtudiantDB extends Etudiant{
 
     
     
-    public function getEtudiant(){
+    public function getEtudiant($adresse_mail,$mot_de_passe){
         try{
-            $query = "select * from etudiant";
+            $query = "select * from etudiant where adresse_mail=:adresse_mail and mot_de_passe=:mot_de_passe";
             $resultset = $this->_db->prepare($query);
-            //$resultset->bindValue(':login',$login);
-            //$resultset->bindValue(':password',$password);
+            $resultset->bindValue(':adresse_mail',$adresse_mail ,PDO::PARAM_STR);
+            $resultset->bindValue(':mot_de_passe',$mot_de_passe , PDO::PARAM_STR);
             $resultset->execute();
 
             while($data = $resultset->fetch()){

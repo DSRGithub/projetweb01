@@ -31,7 +31,7 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
                 }
                 ?>
                 <div class="">
-                    <a href="index.php?page=login.php">Administration</a>
+                    <a href="index.php?page=disconnect.php">Deconnexion,</a>
                 </div>
             </div>
         </header>
