@@ -25,8 +25,8 @@
                     Liste des absences
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./index.php?page=instruments_digitaux.php">Professeurs absents</a>
-                    <a class="dropdown-item" href="./index.php?page=jquery1.php">Notre site</a>
+                    <a class="dropdown-item" href="./index.php?page=absences.php">Professeurs absents</a>
+                    <a class="dropdown-item" href="./index.php?page=jquery.php">Notre site</a>
                 </div>
             </li>
         </ul>

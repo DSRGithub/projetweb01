@@ -9,7 +9,9 @@ if (isset($_GET['submit_inscription'])) {
         $retour = $cl->addEtudiant($_GET);
         print "Insertion dans la base de données réussie ! <br/>";
     }
-    var_dump($_GET);
+    
+                
+    //var_dump($_GET);
 }
 
 

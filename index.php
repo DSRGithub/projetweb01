@@ -30,9 +30,12 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
                     require './lib/php/p_menu.php';
                 }
                 ?>
-                <div class="">
+                <!--<div class="">
                     <a href="index.php?page=disconnect.php">Deconnexion,</a>
                 </div>
+                <div class="">
+                    <a href="index.php?page=login.php">Administration</a>
+                </div>-->
             </div>
         </header>
         <section id="main">

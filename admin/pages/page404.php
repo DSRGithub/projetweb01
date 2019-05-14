@@ -1,5 +1,6 @@
 <p>
-    Page inexistante
-    <img src="./admin/images/404.jpg"/>&nbsp;
-</p>
+<div class="alert alert-danger" role="alert">
+  error 404!
+</div>  
+</P>
 
