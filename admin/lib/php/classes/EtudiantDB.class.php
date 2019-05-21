@@ -67,4 +67,43 @@ class EtudiantDB extends Etudiant{
         }
     }
     
+      public function updateEtudiant($champ,$nouveau,$id){        
+        
+        try {
+          
+            $query="UPDATE etudiant set ".$champ." = '".$nouveau."' where id_etudiant ='".$id."'";            
+           // var_dump($id);
+            $resultset = $this->_db->prepare($query);
+            $resultset->execute();            
+            
+        }catch(PDOException $e){
+            print $e->getMessage();
+        }
+   
+}
+public function getAllEtudiant(){
+        $query = "select * from etudiant";
+        try{
+            
+            $resultset = $this->_db->prepare($query);
+            //$resultset->bindValue(':login',$login,PDO::PARAM_STR);
+            //$resultset->bindValue(':password',$password,PDO::PARAM_STR);
+            $resultset->execute();      
+        }
+        catch(PDOException $e){
+            print $e->getMessage();
+        }
+        while($data = $resultset->fetch()){
+            try{
+                $_array[] = $data;
+            }
+             catch(PDOException $e){
+            print $e->getMessage();
+        }   
+           }
+           return $_array;
+        
+        
+    }
+
 }

@@ -1,2 +1,6 @@
-Bienvenu dans la partie adminsitration !
+<?php
+include ('lib/php/verifier_connexion.php');
+?>
+
+Bienvenue dans la partie adminsitration !
 

@@ -1,4 +1,5 @@
 <?php
+include ('./lib/php/verifier_connexion_etudiant.php');
 session_destroy();
 print "<meta http-equiv=\"refresh\": Content=\"0;URL=index.php\">";
 print $_SESSION['etudiant'];
