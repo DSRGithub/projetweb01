@@ -1,13 +1,12 @@
-<h3 class="aligner txtGras">Tableau éditable des membres inscrits sur mon site</h3>
+<h3 class="aligner txtGras">Tableau éditable des absences</h3>
 <?php
-include ('./lib/php/verifier_connexion.php');
-
-//récupération des etudiants
-$etudiant = new EtudiantDB($cnx);
+include ('lib/php/verifier_connexion.php');
+$etudiant = new vue_absences_professeurs_local_cours($cnx);
+//récupération des absences
 $liste = array();
 $liste = null;
-$liste=$etudiant->getAllEtudiant();
-$nbr=count($liste);
+$liste = $vue->getAllAbsences();
+$nbr = count($liste);
 ?>
 
 
@@ -28,17 +27,17 @@ $nbr=count($liste);
             
                 <td class="ecart"><?php print $liste[$i]['id_etudiant']; ?></td>
                 
-                <td><span contenteditable="true" name="nom" class="ecart" id="<?php print $liste[$i]['id_etudiant']; ?>">
+                <td><span contenteditable="true" name="Nom" class="ecart" id="<?php print $liste[$i]['id_etudiant']; ?>">
                         <?php print $liste[$i]['nom']; ?></span>
                 </td>
-                <td><span contenteditable="true" name="prenom" class="ecart" id="<?php print $liste[$i]['id_etudiant']; ?>">
+                <td><span contenteditable="true" name="Prenom" class="ecart" id="<?php print $liste[$i]['id_etudiant']; ?>">
                         <?php print $liste[$i]['prenom']; ?></span>
                 </td>
                                
-                <td><span contenteditable="true" name="adresse_mail" class="ecart" id="<?php print $liste[$i]['id_etudiant']; ?>">
+                <td><span contenteditable="true" name="Adresse_mail" class="ecart" id="<?php print $liste[$i]['id_etudiant']; ?>">
                         <?php print $liste[$i]['telephone']; ?></span>
                 </td>
-                <td><span contenteditable="true" name="mot_de_passe" class="ecart" id="<?php print $liste[$i]['id_etudiant']; ?>">
+                <td><span contenteditable="true" name="Mot_de_passe" class="ecart" id="<?php print $liste[$i]['id_etudiant']; ?>">
                         <?php print $liste[$i]['mot_de_passe']; ?></span>
                 </td>
                
@@ -48,5 +47,8 @@ $nbr=count($liste);
         ?>
     </table>  
 </div>
+
+
+
 
 

@@ -74,6 +74,7 @@ class EtudiantDB extends Etudiant{
             $query="UPDATE etudiant set ".$champ." = '".$nouveau."' where id_etudiant ='".$id."'";            
            // var_dump($id);
             $resultset = $this->_db->prepare($query);
+            print $query;
             $resultset->execute();            
             
         }catch(PDOException $e){

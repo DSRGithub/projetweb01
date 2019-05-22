@@ -1,0 +1,13 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-mai-2019, 0:10:41
+    Author     : David
+*/
+/* custom.css  = personnaliser les classes bootstrap*/
+.dropdown-menu a{ /*classe bootstrap */
+    color:#f00;
+}

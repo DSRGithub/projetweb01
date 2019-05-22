@@ -24,7 +24,7 @@ include ('lib/php/verifier_connexion.php');
                     Comptes utilisateurs
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./Etudiant_edit.php">Liste etudiant editable</a>
+                    <a class="dropdown-item" href="./index.php?page=Etudiant_edit.php">Liste etudiant editable</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -32,7 +32,7 @@ include ('lib/php/verifier_connexion.php');
                     Absences 
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">                   
-                    <a class="dropdown-item" href="./Absences_edit.php">Liste absences editable</a>
+                    <a class="dropdown-item" href=./index.php?page=Absences_edit.php">Liste absences editable</a>
                 </div>
             </li>
             

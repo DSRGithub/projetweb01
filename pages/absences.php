@@ -3,11 +3,13 @@
 </hgroup>
 
 <?php
-include ('./lib/php/verifier_connexion_etudiant.php');
+include ('lib/php/verifier_connexion_etudiant.php');
 //récupération des elements pour la liste déroulante
-$typ = new Vue_absencesDB($cnx);
-$types = $typ->getAllAbsences();
-$nbr_type = count($types);
+$vue = new vue_absences_professeurs_local_cours($cnx);
+$liste = array();
+$liste = null;
+$liste = $vue->getAllAbsences();
+$nbr = count($liste);
 ?>
 
 
@@ -27,16 +29,16 @@ $nbr_type = count($types);
               </thead>
               <tbody>
                   <?php
-                    for ($i = 0; $i < $nbr_type; $i++) {?>
+                    for ($i = 0; $i < $nbr; $i++) {?>
                 <tr>
-                    <th scope="row"><span style="color:white;"><?php print $types[$i]->passage_codeid;?></span></th>
-                    <td><span style="color:white;"><?php  print $types[$i]->nom; ?></span></td>
-                    <td><span style="color:white;"><?php print $types[$i]->lettre; ?></span></td>
-                    <td><span style="color:white;"><?php  print $types[$i]->numero; ?></span></td>
-                    <td><span style="color:white;"><?php  print $types[$i]->intitule; ?></span></td>
-                    <td><span style="color:white;"><?php print $types[$i]->date; ?></span></td>
-                    <td><span style="color:white;"><?php  print $types[$i]->date_debut; ?></span></td>
-                    <td><span style="color:white;"><?php  print $types[$i]->heure_fin; ?></span></td>
+                   <td><span style="color:red;"><?php print " " . $liste[$i]['nom'] . " ";?></span>
+                   <td><span style="color:red;"><?php print " " . $liste[$i]['lettre'] . " ";?></span>
+                   <td><span style="color:red;"><?php print " " . $liste[$i]['numero'] . "  ";?></span>
+                   <td><span style="color:red;"><?php print " " . $liste[$i]['intitule'] . " ";?></span>
+                   <td><span style="color:red;"><?php print " " . $liste[$i]['date'] . " ";?></span>
+                   <td><span style="color:red;"><?php print " " . $liste[$i]['heure_debut'] . "  ";?></span>
+                   <td><span style="color:red;"><?php print " " . $liste[$i]['heure_fin'] . " ";?></span>
+                   
                 </tr>
                     <?php } ?>
                 </tbody>

@@ -23,7 +23,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="./index.php?page=login_c.php">Se connecter</a>
-                    <a class="dropdown-item" href="./index.php?page=disconnect.php">se deconnecter</a>
+                    <a class="dropdown-item" href="./index.php?page=disconnect.php">Se deconnecter</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
