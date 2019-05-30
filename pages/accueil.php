@@ -3,11 +3,11 @@
 <html>
     <head></head>
     <body><div class="">
-
+    <?php if(empty($_SESSION['etudiant'])){ ?>
     <p><a class="btn btn-danger btn-lg" href="index.php?page=Inscription.php" role="button" >Inscription</a></p>
 
     <p><a class="btn btn-danger btn-lg" href="index.php?page=login.php" role="button" >Administration</a></p>
-    
+    <?php }?>
     <!--<p><a class="btn btn-danger btn-lg" href="index.php?page=disconnect.php" role="button" >Deconnexion</a></p>-->
 </div>
     <div class="bd-example">
@@ -21,21 +21,21 @@
       <div class="carousel-item active">
         <img src="./admin/images/img_4.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
+          <h5>Bien planifier son etude</h5>
           <p></p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="./admin/images/absence.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
+          <h5>Etre au courant des absences </h5>
           <p></p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="./admin/images/ecole.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
+          <h5>Condorcet à Mons</h5>
           <p></p>
         </div>
       </div>

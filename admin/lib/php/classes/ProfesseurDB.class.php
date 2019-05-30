@@ -20,6 +20,27 @@ class ProfesseurDB {
         $this->_db = $db;
     }
     
+    public function AddProfesseur($data){
+        //$_db->beginTransaction();
+        try{
+            $query="insert into professeurs ";
+            $query.=" (nom)";
+            $query.=" values(:nom)";
+            $resultset=$this->_db->prepare($query);
+            $resultset->bindValue(':nom',$data['nom']);
+           
+            $resultset->execute();
+            print "Insertion effectuée!!!!";
+        }
+        catch(PDOException $e){
+            print "Echec de l'insertion ".$e->getMessage();
+        }
+        //var_dump($data);
+       // $_db->commit();
+    }
+    
+    
+    
     public function getProfesseur(){
         try{
             $query = "select * from professeurs";

@@ -1,14 +1,14 @@
 <?php
-    include ('lib/php/verifier_connexion.php');
+     include ('lib/php/verifier_connexion.php');
     //PLACER LE TRAITEMENT AU-DESSUS DU FORMULAIRE
     if (isset($_GET['submit'])) {
         extract($_GET,EXTR_OVERWRITE);
-        if(empty($id_professeur)||empty($date)||empty($heure_debut)||empty($heure_fin)){
+        if(empty($lettre)||empty($numero)){
             $erreur="<span class='txtRouge txtGras'> Veuillez remplir tous les champs</span>";
         }
         else{
-            $ad=new AbsencesDB($cnx);
-            $retour=$ad->AddAbsence($_GET);
+            $ad=new LocalDB($cnx);
+            $retour=$ad->AddLocal($_GET);
         }
     }
     ?>
@@ -23,17 +23,11 @@
 								<form action="<?php print $_SERVER['PHP_SELF'];?>" method="get">
                                    <div class="row register-form">
                                     <div class="col-md-6">
-                                         <div class="form-group">
-                                            <input type="int" class="form-control" placeholder="id du professeur" value="" name="id_professeur" id="id_professeur" title="Entrez id du professeur"  required/>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="lettre du local" value="" name="lettre" id="lettre" title="Entrez la lettre du local"  required/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="date" value="" name="date" id="date" title="Entrez la date de l'absence"  required/>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="time" class="form-control" placeholder="heure_debut " value="" name="heure_debut" id="heure_debut" title="Entrez l'heure de debut "  required />
-                                        </div>
-                                         <div class="form-group">
-                                            <input type="time" class="form-control" placeholder="heure_fin " value="" name="heure_fin" id="heure_fin" title="Entrez l'heure de fin"  required />
+                                            <input type="int" class="form-control" placeholder="numero du local" value="" name="numero" id="numero" title="Entrez le numero du local"  required />
                                         </div>
                                         <input type="submit" class="btnRegister" name="submit" id="submit" value="Enregistrer"/>
                                     </div>

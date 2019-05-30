@@ -1,10 +1,10 @@
 <?php
 include ('lib/php/verifier_connexion.php');
 ?>
-<nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-expand-md navbar-light" style="background-color: #8C97E7;">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="./images/administrator.png" alt="logo"/>    
+        <img src="./images/admin.png" width="100" height="100" alt="logo"/>    
         <span class="navbar-toggler-icon"></span>&nbsp;
     </button>
     
@@ -29,10 +29,13 @@ include ('lib/php/verifier_connexion.php');
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Absences 
+                    Gestion
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">                   
-                    <a class="dropdown-item" href=./index.php?page=Absences_edit.php">Liste absences editable</a>
+                    <a class="dropdown-item" href=./index.php?page=ajout_professeur.php">professeur</a>           
+                    <a class="dropdown-item" href=./index.php?page=ajout_local.php">local</a>           
+                    <a class="dropdown-item" href=./index.php?page=ajout_cours.php">cour</a>                   
+                    <a class="dropdown-item" href=./index.php?page=Absences_edit.php">absence</a>
                 </div>
             </li>
             
