@@ -10,7 +10,7 @@
  *
  * @author David
  */
-class absence {
+class absences {
     private $_attributs = array();
 
     public function __construct(array $data) {

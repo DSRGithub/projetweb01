@@ -28,7 +28,7 @@
                                         </div>
                                         <div class="form-group">
                                             <input type="int" class="form-control" placeholder="numero du local" value="" name="numero" id="numero" title="Entrez le numero du local"  required />
-                                        </div>
+                                        </div>&nbsp;
                                         <input type="submit" class="btnRegister" name="submit" id="submit" value="Enregistrer"/>
                                     </div>
                                   </div>

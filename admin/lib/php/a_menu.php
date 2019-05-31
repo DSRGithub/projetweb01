@@ -8,13 +8,12 @@ include ('lib/php/verifier_connexion.php');
         <span class="navbar-toggler-icon"></span>&nbsp;
     </button>
     
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Partie administration</a>
-        </div>
+    
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        
+        <a href="./index.php?page=accueil.php" class="navbar-brand collapse navbar-collapse">
+            Partie adminsitration
+        </a>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="./index.php?page=accueil.php">Accueil<span class="sr-only">(current)</span></a>

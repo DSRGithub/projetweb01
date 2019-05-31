@@ -1,6 +1,6 @@
 /*fonctions jquery pour DA */
 $(document).ready(function () {
-
+   
 // Tableau éditable Etudiant
     
     $("span[id]").click(function () {
@@ -49,7 +49,19 @@ $(document).ready(function () {
             };
         });
     });
-  
+  //tests
+    $('#parag1').css('color', '#FF0000');
+
+    $('#parag2').css({
+        "background-color": "lightcyan",
+        "font-size": "120%"
+    });
+
+    $('#parag1').click(function () {
+        $(this).css('color', '#0000FF');
+        $('#parag2').css('font-size', '80%');
+    });
+
 });
 
 

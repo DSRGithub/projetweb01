@@ -48,7 +48,7 @@ class LocalDB {
             $resultset->execute();
 
             while($data = $resultset->fetch()){
-                $_array[] = new Genre($data);
+                $_array[] = ($data);
             }   
             
         }

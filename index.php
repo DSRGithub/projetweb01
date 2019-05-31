@@ -21,8 +21,8 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
         
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
-        <script src="./Admin/lib/js/FonctionsJqueryDA.js"></script> <!--javascript-->
-      
+        <script src="./Admin/lib/js/fonctionsJqueryDA.js"></script> <!--javascript-->
+        <script src="./Admin/lib/js/fonctionJqueryDA2.js"></script> <!--javascript-->
       
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,9 +65,14 @@ $cnx = Connexion::getInstance($dsn, $user, $pass);
         </section>
         <footer>
             <div class="container text-center" id="footer">
-                Siège social : Chemin du Champ de Mars, 17 à 7000 Mons - +32 (0) 65/40 12 20
-                ©HEPH - Condorcet 2009-2018 | Plan du site | Editeur responsable : Pascal Lambert | Mentions légales
-                La Haute Ecole s’engage dans un enseignement supérieur inclusif
+               <?php
+                if ('./pages/Footer.php') {
+                  
+                include ('./admin/pages/Footer.php');
+                
+                }
+                
+                ?>
             </div>
         </footer>
 

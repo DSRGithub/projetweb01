@@ -13,7 +13,7 @@
     }
     ?>
 <hgroup>
-  <h3 class="aligner txtGras">Entrez les informations sur le local</h3>
+  <h3 class="aligner txtGras">Entrez les informations sur le cour</h3>
   </hgroup>
 <div class="container register">
                 <div class="row">
@@ -42,4 +42,82 @@
                     </div>
     
                 </div>
+<br/><br/><br/><br/>
+<hgroup>
+    <h3 class="aligner txtGras">Liste professeur</h3>
+</hgroup>
 
+<?php
+
+//récupération des elements professeur
+$professeur = new ProfesseurDB($cnx);
+$liste = array();
+$liste = null;
+$liste = $professeur->getProfesseur();
+$nbr = count($liste);
+?>
+
+
+<div class="container">
+    <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="get">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                    <th scope="col"><span style="color:black;">id_professeur</span></th>
+                    <th scope="col"><span style="color:black;">nom</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                  <?php
+                    for ($i = 0; $i < $nbr; $i++) {?>
+                <tr>
+                   
+                   <td><span style="color:red;"><?php print " " . $liste[$i]['id_professeur'] . " ";?></span>
+                   <td><span style="color:red;"><?php print " " . $liste[$i]['nom'] . " ";?></span>
+                </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
+    </form>
+</div>
+
+<br/><br/><br/><br/>
+<hgroup>
+    <h3 class="aligner txtGras">Liste des locaux</h3>
+</hgroup>
+
+<?php
+
+//récupération des elements locaux
+$local = new LocalDB($cnx);
+$liste = array();
+$liste = null;
+$liste = $local->getLocal();
+$nbr = count($liste);
+?>
+
+
+<div class="container">
+    <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="get">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                    <th scope="col"><span style="color:black;">id_local</span></th>
+                    <th scope="col"><span style="color:black;">lettre</span></th>
+                    <th scope="col"><span style="color:black;">numero</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                  <?php
+                    for ($i = 0; $i < $nbr; $i++) {?>
+                <tr>
+                   
+                   <td><span style="color:red;"><?php print " " . $liste[$i]['id_local'] . " ";?></span>
+                   <td><span style="color:red;"><?php print " " . $liste[$i]['lettre'] . " ";?></span>
+                   <td><span style="color:red;"><?php print " " . $liste[$i]['numero'] . " ";?></span>   
+                </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
+    </form>
+</div>

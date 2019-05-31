@@ -1,7 +1,7 @@
 <?php
 
 
-class absencesDB {
+class absencesDB extends absences{
 
     private $_db;
     private $_array = array();
@@ -30,28 +30,45 @@ class absencesDB {
        // $_db->commit();
     }
     
-    public function getAbsences() {
+        public function updateAbsence($champ,$nouveau,$id){        
+        
         try {
-            $this->_db->beginTransaction();
-            $query = "select * from absence";
-            //$resultset->bindValue(':login',$login);
-            //$resultset->bindValue(':password',$password);
-            $resultset->execute();
-
-            while($data = $resultset->fetch()){
-                $_array[] = new Genre($data);
-            }   
+          
+            $query="UPDATE absence set ".$champ." = '".$nouveau."' where id_absence ='".$id."'";            
+           // var_dump($id);
+            $resultset = $this->_db->prepare($query);
+            print $query;
+            $resultset->execute();            
             
+        }catch(PDOException $e){
+            print $e->getMessage();
+        }
+   
+}
+   
+    
+    public function getAbsences() {
+     $query = "select id_absence, id_professeur , date , heure_debut , heure_fin from absence";
+        try{
+            
+            $resultset = $this->_db->prepare($query);
+            //$resultset->bindValue(':login',$login,PDO::PARAM_STR);
+            //$resultset->bindValue(':password',$password,PDO::PARAM_STR);
+            $resultset->execute();      
         }
         catch(PDOException $e){
-            print $e->getMessage(); 
+            print $e->getMessage();
         }
-        if(!empty($_array)){
-            return $_array;
-        }
-        else {
-            return null;
-        }
+        while($data = $resultset->fetch()){
+            try{
+                $_array[] = $data;
+            }
+             catch(PDOException $e){
+            print $e->getMessage();
+        }   
+           }
+           return $_array;
+        
     }
 
 }
