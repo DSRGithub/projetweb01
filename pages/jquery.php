@@ -11,4 +11,9 @@
         Bénéficiez d'une meilleure visibilité pour gérer  les absences et les retards, le tout en une seule solution.</p>
 
 </div>
+    <!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe width="300" height="150" src="https://www.youtube.com/embed/9B2m_R4_zKY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 </div>
