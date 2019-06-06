@@ -1,3 +1,4 @@
+<div class="panel panel-default col-xs-12 col-sm-12 col-md-10 col-lg-12">
 
 <footer class="-bg-footer" id="footer">
     <div class="container-fluid">
@@ -37,4 +38,5 @@
 
 
 </footer>
-
+    
+</div>

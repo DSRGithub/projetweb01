@@ -1,3 +1,4 @@
+<div class="panel panel-default col-xs-12 col-sm-12 col-md-10 col-lg-12">
 <!--<h3 class="aligner txtGras">Inscription :</h3>-->
 <?php
 if (isset($_GET['submit_inscription'])) {
@@ -7,10 +8,10 @@ if (isset($_GET['submit_inscription'])) {
     } else {
         $cl = new EtudiantDB($cnx);
         $retour = $cl->addEtudiant($_GET);
-        print "Insertion dans la base de données réussie ! <br/>";
-    }
+        print "Inscription reussie ! <br/>";
+    } 
     
-                
+         
     //var_dump($_GET);
 }
 
@@ -96,5 +97,5 @@ if (isset($erreur))
     </form>
 
 </div>
-
+</div>
 

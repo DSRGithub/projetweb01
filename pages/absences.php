@@ -1,4 +1,5 @@
- <hgroup>
+<div class="panel panel-default col-xs-12 col-sm-12 col-md-10 col-lg-12">
+<hgroup>
     <h3 class="aligner txtGras">Liste absences</h3>
 </hgroup>
 
@@ -44,4 +45,5 @@ $nbr = count($liste);
                 </tbody>
             </table>
     </form>
+</div>
 </div>

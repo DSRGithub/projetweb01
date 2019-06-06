@@ -1,7 +1,8 @@
 /*----------------------General---------------------*/
-.body{
-	background-color:#000000;
+body{
+	background-color:white;
 }
+
 footer
 {
     margin-top:150px ;
@@ -129,3 +130,4 @@ footer
 		font-size: 7px;
 		position: absolute;
 	}
+        

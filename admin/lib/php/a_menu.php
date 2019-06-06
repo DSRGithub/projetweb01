@@ -1,7 +1,7 @@
 <?php
 include ('lib/php/verifier_connexion.php');
 ?>
-<nav class="navbar navbar-expand-md navbar-light" style="background-color: #8C97E7;">
+<nav class="navbar navbar-expand-md navbar-light" style="background-color: #E68C8C;">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <img src="./images/admin.png" width="100" height="100" alt="logo"/>    

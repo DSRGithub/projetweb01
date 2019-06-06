@@ -1,3 +1,4 @@
+<div class="panel panel-default col-xs-12 col-sm-12 col-md-10 col-lg-12">
 <h2>Login administration</h2>
 <?php 
 //si on a cliqué sur le bouton d'envoi du formulaire
@@ -60,7 +61,7 @@ if(isset($_POST['submit_login'])){
     </div>
 </div>
 </form>
-
+</div>
 
 
 

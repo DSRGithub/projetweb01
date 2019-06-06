@@ -1,3 +1,4 @@
+<div class="panel panel-default col-xs-12 col-sm-12 col-md-10 col-lg-12">
 <h2>Login etudiant</h2>
 <?php
 //print "Connexion etudiant";
@@ -77,3 +78,4 @@ if (isset($_POST['submit_login'])) {
     </div>
     </div>
 </form>
+</div>

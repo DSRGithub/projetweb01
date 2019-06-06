@@ -3,11 +3,12 @@
 <html>
     <head></head>
     <body><div class="">
-    <?php if(empty($_SESSION['etudiant'])){ ?>
-    <p><a class="btn btn-danger btn-lg" href="index.php?page=Inscription.php" role="button" >Inscription</a></p>
-
-    <p><a class="btn btn-danger btn-lg" href="index.php?page=login.php" role="button" >Administration</a></p>
-    <?php }?>
+        <?php if(empty($_SESSION['etudiant'])){ ?>
+     <div class="jumbotron col-xs-12 col-sm-12 col-md-10 col-lg-12">       
+          <a class="btn btn-danger btn-lg" href="index.php?page=Inscription.php" role="button" >Inscription</a>
+          <a class="btn btn-danger btn-lg" href="index.php?page=login.php" role="button" >Administration</a>
+     </div> 
+        <?php }?>
     <!--<p><a class="btn btn-danger btn-lg" href="index.php?page=disconnect.php" role="button" >Deconnexion</a></p>-->
 </div>
     <div class="bd-example">
@@ -28,7 +29,7 @@
       <div class="carousel-item">
         <img src="./admin/images/absence.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Etre au courant des absences </h5>
+          <h5></h5>
           <p></p>
         </div>
       </div>

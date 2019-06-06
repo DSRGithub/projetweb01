@@ -49,11 +49,13 @@ $(document).ready(function () {
             };
         });
     });
+   
+
   //tests
     $('#parag1').css('color', '#FF0000');
 
     $('#parag2').css({
-        "background-color": "lightcyan",
+        "background-color": "green",
         "font-size": "120%"
     });
 
@@ -61,7 +63,9 @@ $(document).ready(function () {
         $(this).css('color', '#0000FF');
         $('#parag2').css('font-size', '80%');
     });
-
+    
+    
+    
 });
 
 

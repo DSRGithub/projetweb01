@@ -1,3 +1,4 @@
+<div class="panel panel-default col-xs-12 col-sm-12 col-md-10 col-lg-12">
 <h3 class="aligner txtGras">Tableau éditable des membres inscrits sur mon site</h3>
 <?php
 include ('lib/php/verifier_connexion.php');
@@ -49,6 +50,7 @@ $nbr=count($liste);
         }
         ?>
     </table>  
+</div>
 </div>
 
 

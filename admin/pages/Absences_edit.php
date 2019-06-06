@@ -1,3 +1,4 @@
+<div class="panel panel-default col-xs-12 col-sm-12 col-md-12 col-lg-12">
 <?php
     include ('lib/php/verifier_connexion.php');
     //PLACER LE TRAITEMENT AU-DESSUS DU FORMULAIRE
@@ -131,4 +132,5 @@ $nbr=count($liste);
         }
         ?>
     </table>  
+</div>
 </div>
