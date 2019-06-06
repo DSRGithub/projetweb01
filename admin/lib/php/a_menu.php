@@ -35,6 +35,7 @@ include ('lib/php/verifier_connexion.php');
                     <a class="dropdown-item" href=./index.php?page=ajout_local.php">local</a>           
                     <a class="dropdown-item" href=./index.php?page=ajout_cours.php">cour</a>                   
                     <a class="dropdown-item" href=./index.php?page=Absences_edit.php">absence</a>
+                     <a class="dropdown-item" href=./index.php?page=Absences_editable.php">absences editables</a>
                 </div>
             </li>
             
